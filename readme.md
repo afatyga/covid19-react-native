@@ -25,8 +25,8 @@ Provide screenshots and video links for all steps in your GitHub repository
 5. Overlay the data on the maps.
 
 # Milestone Deadlines
-Step 1 Completed - April 8, 2020
-Step 2 Completed - April 10, 2020
-Step 3 Completed - April 12, 2020
-Step 4 Completed - April 17, 2020
-Step 5 Completed - April 24, 2020
+Step 1 Completed - April 8, 2020 <br>
+Step 2 Completed - April 10, 2020 <br>
+Step 3 Completed - April 12, 2020 <br>
+Step 4 Completed - April 17, 2020 <br>
+Step 5 Completed - April 24, 2020 <br>
