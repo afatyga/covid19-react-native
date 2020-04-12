@@ -34,9 +34,9 @@ Step 5 Completed - April 24, 2020 <br>
 # Milestone 2
 I went through the tutorials and was able to create a hello world application on my cell phone (iPhone) and emulator (Pixel 3). I then tried a few different examples on my phone. The following images show my work - screenshots on my phone and the process of getting it to work on my phone:
 <img src="./Step2/IMG_2134.PNG" width="55%" /> <br> <br>
-<img src="./Step2/IMG_2135.PNG" width="55%" /> <br> <br>
-<img src="./Step2/IMG_2136.PNG" width="55%" /> - Phyllis the iphone is my iphone<br> <br>
-<img src="./Step2/IMG_2137.PNG" width="55%" /> <br> <br>
+<img src="./Step2/IMG_2135.jpg" width="55%" /> <br> <br>
+<img src="./Step2/IMG_2136.jpg" width="55%" /> - Phyllis the iphone is my iphone<br> <br>
+<img src="./Step2/IMG_2137.jpg" width="55%" /> <br> <br>
 <img src="./Step2/IMG_2138.PNG" width="55%" /> <br> <br>
 <img src="./Step2/IMG_2139.PNG" width="55%" /> <br> <br>
 <img src="./Step2/IMG_2140.PNG" width="55%" /> <br> <br>
