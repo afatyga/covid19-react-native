@@ -43,3 +43,10 @@ I went through the tutorials and was able to create a hello world application on
 <img src="./Step2/IMG_2141.PNG" width="55%" /> <br> <br>
 <img src="./Step2/IMG_2142.PNG" width="55%" /> <br> <br>
 app.js in the Step2 folder is the hello world file
+
+# Milestone 3
+I had difficulty trying to get a more difficult use case but realized I just needed to understand how maps in react-native worked. I ccompleted step 3 by having an app that is set to photonics on a map and allows the marker to be moved and gives an alert of the new coordinates. I play on spending the next couple days trying to understand react-native-maps even further. Attached are screenshots of my app working. <br>
+<img src="./Step3/IMG_2149.PNG" width="55%" /> <br> <br>
+<img src="./Step3/IMG_2150.PNG" width="55%" /> <br> <br>
+<img src="./Step3/IMG_2151.PNG" width="55%" /> <br> <br>
+app.js is in the Step3 folder that was able to do this.
