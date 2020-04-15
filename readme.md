@@ -28,7 +28,7 @@ Provide screenshots and video links for all steps in your GitHub repository
 - Step 1 Completed - April 8, 2020 Done <br>   
 - Step 2 Completed - April 10, 2020 Done <br>
 - Step 3 Completed - April 12, 2020  Done <br>
-- Step 4 Completed - April 17, 2020 <br>
+- Step 4 Completed - April 17, 2020  Done <br>
 - Step 5 Completed - April 24, 2020 <br>
 
 # Milestone 2
@@ -50,3 +50,6 @@ I had difficulty trying to get a more difficult use case but realized I just nee
 <img src="./Step3/IMG_2150.PNG" width="55%" /> <br> <br>
 <img src="./Step3/IMG_2151.PNG" width="55%" /> <br> <br>
 app.js is in the Step3 folder that was able to do this.
+
+# Milestone 4
+Milestone 4 is located in branch Step4 and in a folder called Step4 - There are 3 different javascript files for the 3 different applications I made. USUsingSummary.js and byCountry.js created the same view but used the API differently - they created the 1st picture. App.js allowed the user to put in a country and click a submit button to receive the statistics listed on the same view and are shown in the next 3 pictures. 
