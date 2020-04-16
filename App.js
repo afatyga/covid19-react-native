@@ -12,8 +12,6 @@ getJson = (country) => {
             .then((res) => res.json());
 }
 
-Geocoder.init("AIzaSyApv1u-SAt3SnhXDI-TU0q7DUvF-GQOgC0");
-
 export default class App extends React.Component {
   state = {
     country: 'Current Location',
