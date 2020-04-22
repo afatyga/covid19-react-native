@@ -35,7 +35,7 @@ When a user changes the location of the marker, onRegionChange is called upon on
 
 # Screenshots + Video of Finished Product Explained
 Below is a link to a video demo of me using the app on my iPhone
-- [Link to video demo](https://www.youtube.com/watch?v=pxIZ49NdnUw&feature=youtu.be) <br>
+- [Link to video demo](https://www.youtube.com/watch?v=pxIZ49NdnUw&feature=youtu.be) <br><br>
 Loading up before statistics are found for your location: <br><img src="IMG_2212.PNG" width= 300px height = 450px/> <br><br>
 Ability to change date: <br><img src="IMG_2213.PNG" width= 300px height = 450px/> <br><br>
 Statistics on 4/15: <br><img src="IMG_2214.PNG" width= 300px height = 450px/> <br><br>
