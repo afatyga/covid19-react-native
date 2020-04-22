@@ -13,8 +13,25 @@ Stretch goal:
 You should document your architecture and design decisions as you go on GitHub.
 Provide screenshots and video links for all steps in your GitHub repository
 
+
+# How to Use It
+Works only on Apple iPhone
+- npm install -g expo-cli
+- expo init AwesomeProject
+- cd AwesomeProject
+- replace the app.js in this folder with the app.js in the repo
+- copy in startup.bat or startup.sh
+- run startup.bat or startup.sh in the AwesomeProject folder
+- npm start
+- Download Expo app on iOS, Scan QR Code on the app
+- May use app to change date, change location of the marker and the statistics will update, press the button for live overall statistics
+
 # How It Works
-The first step is to allow the app to user your location. After allowing the app to use your location, a map loads that shows your current location and the statistics in your country (number of cases, deaths, recovered and new cases, deaths and recovered). You can change the date of the map from live to other dates using the RNPickerSelect and back to live. You can lift the marker to change it to a different country and the statistics will update to the current date selected. When permission is initially given, the country is determined through the longitude and latitude using react-native-geocoding and the country is passed to getJson(country) which then returns the response from the API call in getJson. From there, I get today's date to then get the correct statistics and then update the states to reflect this date so the statistics can be displayed on the mobile app. Users can then change the date that they want the statistics to reflect. This calls the function onDateChange which then calls getJson again and goes through a similar process as previously but instead onDateChange receives the new date and not the initial latitude and longitude. onDateChange makes sure to get the statistics from the corresponding date selected. I keep track of the date, latitude, longitude, and the various statistics with states; however, states do no consistently immediately update and therefore, I pass latitude and longitude or the date or country instead of relying on the state to have updated after I called setState. When a user changes the location of the marker, onRegionChange is called upon onDragEnd (which mean the marker is no longer being dragged and has been place in its new location) and react-native-geocoding is used again to determine the country from the latitude and longitude coordinates and another API call occurs to receive the new statistics and the date state is checked so the correct date information is displayed. Users may also click the button to receive live data of the whole world which has a pop up alert that displays the information. Upon clicking the button, handleSubmit is called which then calls getLiveJson which makes the API call, the JSON return is then broken up and calls alert with the proper information. 
+The first step is to allow the app to user your location. After allowing the app to use your location, a map loads that shows your current location and the statistics in your country (number of cases, deaths, recovered and new cases, deaths and recovered). You can change the date of the map from live to other dates using the RNPickerSelect and back to live. You can lift the marker to change it to a different country and the statistics will update to the current date selected. When permission is initially given, the country is determined through the longitude and latitude using react-native-geocoding and the country is passed to getJson(country) which then returns the response from the API call in getJson. 
+<br><br>
+From there, I get today's date to then get the correct statistics and then update the states to reflect this date so the statistics can be displayed on the mobile app. Users can then change the date that they want the statistics to reflect. This calls the function onDateChange which then calls getJson again and goes through a similar process as previously but instead onDateChange receives the new date and not the initial latitude and longitude. onDateChange makes sure to get the statistics from the corresponding date selected. I keep track of the date, latitude, longitude, and the various statistics with states; however, states do no consistently immediately update and therefore, I pass latitude and longitude or the date or country instead of relying on the state to have updated after I called setState. 
+<br><br>
+When a user changes the location of the marker, onRegionChange is called upon onDragEnd (which mean the marker is no longer being dragged and has been place in its new location) and react-native-geocoding is used again to determine the country from the latitude and longitude coordinates and another API call occurs to receive the new statistics and the date state is checked so the correct date information is displayed. Users may also click the button to receive live data of the whole world which has a pop up alert that displays the information. Upon clicking the button, handleSubmit is called which then calls getLiveJson which makes the API call, the JSON return is then broken up and calls alert with the proper information. 
 
 # Steps
 1. Setup your REACT Native Environment
@@ -32,13 +49,6 @@ The first step is to allow the app to user your location. After allowing the app
 - Step 3 Completed - April 12, 2020  Done <br>
 - Step 4 Completed - April 17, 2020  Done <br>
 - Step 5 Completed - April 24, 2020 <br>
-
-# How to Use It
-- Clone Repo
-- cd Final
-- npm start
-- Download Expo app on iOS, Scan QR Code on the app
-- May use app to change date, change location of the marker and the statistics will update, press the button for live overall statistics
 
 # Milestone 2-4 Explanations
 ## Milestone 2
