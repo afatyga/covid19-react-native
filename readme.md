@@ -33,6 +33,10 @@ From there, I get today's date to then get the correct statistics and then updat
 <br><br>
 When a user changes the location of the marker, onRegionChange is called upon onDragEnd (which mean the marker is no longer being dragged and has been place in its new location) and react-native-geocoding is used again to determine the country from the latitude and longitude coordinates and another API call occurs to receive the new statistics and the date state is checked so the correct date information is displayed. Users may also click the button to receive live data of the whole world which has a pop up alert that displays the information. Upon clicking the button, handleSubmit is called which then calls getLiveJson which makes the API call, the JSON return is then broken up and calls alert with the proper information. 
 
+# Screenshots of Finished Product Explained
+On Load Up: <img src="IMG_2212.PNG" width= 300px height = 450px/> <br>
+
+
 # Steps
 1. Setup your REACT Native Environment
 2. Go through REACT native Tutorial
@@ -53,22 +57,22 @@ When a user changes the location of the marker, onRegionChange is called upon on
 # Milestone 2-4 Explanations
 ## Milestone 2
 I went through the tutorials and was able to create a hello world application on my cell phone (iPhone) and emulator (Pixel 3). I then tried a few different examples on my phone. The following images show my work - screenshots on my phone and the process of getting it to work on my phone:<br><br>
-<img src="./Step2/IMG_2134.PNG" width="55%" height="40%"/> <br> <br>
-<img src="./Step2/IMG_2135.jpg" width="55%" /> <br> <br>
-<img src="./Step2/IMG_2136.jpg" width="55%" /> - Phyllis the iphone is my iphone<br> <br>
-<img src="./Step2/IMG_2137.jpg" width="55%" /> <br> <br>
-<img src="./Step2/IMG_2138.PNG" width="55%" /> <br> <br>
-<img src="./Step2/IMG_2139.PNG" width="55%" /> <br> <br>
-<img src="./Step2/IMG_2140.PNG" width="55%" /> <br> <br>
-<img src="./Step2/IMG_2141.PNG" width="55%" /> <br> <br>
-<img src="./Step2/IMG_2142.PNG" width="55%" /> <br> <br>
+<img src="./Step2/IMG_2134.PNG" width= 300px height = 450px/> <br> <br>
+<img src="./Step2/IMG_2135.jpg"width= 300px height = 450px /> <br> <br>
+<img src="./Step2/IMG_2136.jpg" width= 300px height = 450px /> - Phyllis the iphone is my iphone<br> <br>
+<img src="./Step2/IMG_2137.jpg" width= 300px height = 450px /> <br> <br>
+<img src="./Step2/IMG_2138.PNG" width= 300px height = 450px /> <br> <br>
+<img src="./Step2/IMG_2139.PNG" width= 300px height = 450px /> <br> <br>
+<img src="./Step2/IMG_2140.PNG" width= 300px height = 450px /> <br> <br>
+<img src="./Step2/IMG_2141.PNG" width= 300px height = 450px /> <br> <br>
+<img src="./Step2/IMG_2142.PNG" width= 300px height = 450px /> <br> <br>
 app.js in the Step2 folder is the hello world file
 
 ## Milestone 3
 I had difficulty trying to get a more difficult use case but realized I just needed to understand how maps in react-native worked. I ccompleted step 3 by having an app that is set to photonics on a map and allows the marker to be moved and gives an alert of the new coordinates. I play on spending the next couple days trying to understand react-native-maps even further. Attached are screenshots of my app working. <br>
-<img src="./Step3/IMG_2149.PNG" width="55%" /> <br> <br>
-<img src="./Step3/IMG_2150.PNG" width="55%" /> <br> <br>
-<img src="./Step3/IMG_2151.PNG" width="55%" /> <br> <br>
+<img src="./Step3/IMG_2149.PNG" width= 300px height = 450px /> <br> <br>
+<img src="./Step3/IMG_2150.PNG" width= 300px height = 450px/> <br> <br>
+<img src="./Step3/IMG_2151.PNG" width= 300px height = 450px /> <br> <br>
 app.js is in the Step3 folder that was able to do this.
 
 ## Milestone 4
