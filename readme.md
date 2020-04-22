@@ -34,8 +34,15 @@ From there, I get today's date to then get the correct statistics and then updat
 When a user changes the location of the marker, onRegionChange is called upon onDragEnd (which mean the marker is no longer being dragged and has been place in its new location) and react-native-geocoding is used again to determine the country from the latitude and longitude coordinates and another API call occurs to receive the new statistics and the date state is checked so the correct date information is displayed. Users may also click the button to receive live data of the whole world which has a pop up alert that displays the information. Upon clicking the button, handleSubmit is called which then calls getLiveJson which makes the API call, the JSON return is then broken up and calls alert with the proper information. 
 
 # Screenshots of Finished Product Explained
-On Load Up: <img src="IMG_2212.PNG" width= 300px height = 450px/> <br>
-
+Loading up before statistics are found for your location: <img src="IMG_2212.PNG" width= 300px height = 450px/> <br>
+Ability to change date: <img src="IMG_2213.PNG" width= 300px height = 450px/> <br>
+Statistics on 4/15: <img src="IMG_2214.PNG" width= 300px height = 450px/> <br>
+After clicking for live worldwide stats: <img src="IMG_2215.PNG" width= 300px height = 450px/> <br>
+Statistics on 4/15 and moved to Canada: <img src="IMG_2216.PNG" width= 300px height = 450px/> <br>
+Changed to 4/18, still in Canada <img src="IMG_2216.PNG" width= 300px height = 450px/> <br>
+Moved to Latvia, with same date <img src="IMG_2218.PNG" width= 300px height = 450px/> <br>
+Changing date in Latvia <img src="IMG_2219.PNG" width= 300px height = 450px/> <br>
+Moved to France <img src="IMG_2220.PNG" width= 300px height = 450px/> <br>
 
 # Steps
 1. Setup your REACT Native Environment
