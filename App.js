@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View , TextInput, TouchableHighlight} from 'react-native';
+import { StyleSheet, Button, Text, View , TextInput, TouchableHighlight} from 'react-native';
 import MapView, {Marker} from 'react-native-maps';
 import Geocoder from 'react-native-geocoding';
 import * as Permissions from 'expo-permissions';
@@ -55,7 +55,7 @@ export default class App extends React.Component {
 
 
 
-                      var date = new Date().getDate() -1;
+                      var date = new Date().getDate() -1; //usually doesn't update everyday until the next day!
                       var month = new Date().getMonth() + 1;
                       var year = new Date().getFullYear();
                       if (month < 10) month = "0" + month
@@ -240,18 +240,11 @@ getJson(this.state.country)
               }
               title={this.state.country}
             />
-            <Text style={styles.title}>COVID-19 in the World</Text>
-          
-            <TouchableHighlight
-                  style = {styles.button}
-                  underlayColor= "white"
-                  onPress = {this.handleSubmit}
-            >
-                <Text
-                    style={styles.buttonText}>
-                    Click for World Wide Live Stats
-                </Text>
-          </TouchableHighlight>
+            <Button style = {styles.button}
+                title="Click for World Wide Live Stats"
+                onPress={this.handleSubmit}
+              />
+
 
           <RNPickerSelect
             onValueChange={(value) => {
@@ -272,7 +265,10 @@ getJson(this.state.country)
            }}
           items={[
                 { label: 'Today', value: 'Live' },
-
+                { label: '4/22/2020', value: '2020-04-22' },
+                { label: '4/21/2020', value: '2020-04-21' },
+                { label: '4/20/2020', value: '2020-04-20' },
+                { label: '4/19/2020', value: '2020-04-19' },
                 { label: '4/18/2020', value: '2020-04-18' },
                 { label: '4/17/2020', value: '2020-04-17' },
                 { label: '4/16/2020', value: '2020-04-16' }, 
@@ -310,7 +306,18 @@ getJson(this.state.country)
                 { label: '3/15/2020', value: '2020-03-15' }, 
                 { label: '3/14/2020', value: '2020-03-14' }, 
                 { label: '3/13/2020', value: '2020-03-13' }, 
-                { label: '3/12/2020', value: '2020-03-12' }
+                { label: '3/12/2020', value: '2020-03-12' },
+                { label: '3/11/2020', value: '2020-03-11' },
+                { label: '3/10/2020', value: '2020-03-10' },
+                { label: '3/09/2020', value: '2020-03-09' },
+                { label: '3/08/2020', value: '2020-03-08' },
+                { label: '3/07/2020', value: '2020-03-07' },
+                { label: '3/06/2020', value: '2020-03-06' },
+                { label: '3/05/2020', value: '2020-03-05' },
+                { label: '3/04/2020', value: '2020-03-04' },
+                { label: '3/03/2020', value: '2020-03-03' },
+                { label: '3/02/2020', value: '2020-03-02' },
+                { label: '3/01/2020', value: '2020-03-01' }
             ]}
             />
             <Text style= {styles.result1}>Total Cases: {this.state.totalCases}</Text>
@@ -349,20 +356,6 @@ const styles = StyleSheet.create({
     right:0,
     bottom:0,
   },
-  title: {
-    marginTop:20,
-    fontSize: 18,
-    backgroundColor: 'black',
-    color: 'white',
-    alignSelf: 'center',
-    fontFamily:"Noteworthy"
-  },
-  buttonText: {
-    fontSize: 16,
-    color: 'black',
-    alignSelf: 'center',
-    fontFamily:"Noteworthy",
-  },
   button: {
     height: 40,
     flexDirection: 'row',
@@ -370,7 +363,7 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     borderWidth: 1,
     marginBottom: 10,
-    marginTop: 20,
+    marginTop: 60,
     marginLeft: 35,
     marginRight: 35,
     alignSelf: 'stretch',
@@ -396,15 +389,16 @@ const styles = StyleSheet.create({
     fontFamily:"Noteworthy",
   },
   inputIOS: {
-        fontSize: 16,
-        paddingTop: 13,
-        paddingHorizontal: 10,
-        paddingBottom: 12,
-        borderWidth: 1,
-        borderColor: 'gray',
-        borderRadius: 4,
-        backgroundColor: 'white',
-        color: 'black',
+    fontSize: 16,
+    height: 50,
+    marginLeft: 20,
+    marginRight:20,
+    marginTop: 60,
+    borderWidth: 1,
+    borderColor: 'gray',
+    borderRadius: 4,
+    backgroundColor: 'white',
+    color: 'black',
   }
 
 });
