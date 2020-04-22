@@ -34,7 +34,7 @@ From there, I get today's date to then get the correct statistics and then updat
 When a user changes the location of the marker, onRegionChange is called upon onDragEnd (which mean the marker is no longer being dragged and has been place in its new location) and react-native-geocoding is used again to determine the country from the latitude and longitude coordinates and another API call occurs to receive the new statistics and the date state is checked so the correct date information is displayed. Users may also click the button to receive live data of the whole world which has a pop up alert that displays the information. Upon clicking the button, handleSubmit is called which then calls getLiveJson which makes the API call, the JSON return is then broken up and calls alert with the proper information. 
 
 # Screenshots + Video of Finished Product Explained
-Below is a link to a video demo of me using the app on my iPhone
+Below is a link to a video demo of me using the app on my iPhone <br>
 [Link to video demo](https://www.youtube.com/watch?v=pxIZ49NdnUw&feature=youtu.be) <br><br>
 Loading up before statistics are found for your location: <br><img src="IMG_2212.PNG" width= 300px height = 450px/> <br><br>
 Ability to change date: <br><img src="IMG_2213.PNG" width= 300px height = 450px/> <br><br>
