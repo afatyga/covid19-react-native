@@ -28,6 +28,7 @@ Works only on Apple iPhone
 - npm start
 - Download Expo app on iOS, Scan QR Code on the app
 - May use app to change date, change location of the marker and the statistics will update, press the button for live overall statistics
+- NOTE: If there are issues with changing the date on the app, open App.js and resave the file (without changing anything in the file) and let the app reload until it starts working again - unknown issue that resolves itself after letting the app refresh!
 
 # How It Works
 The first step is to allow the app to user your location. After allowing the app to use your location, a map loads that shows your current location and the statistics in your country (number of cases, deaths, recovered and new cases, deaths and recovered). You can change the date of the map from live to other dates using the RNPickerSelect and back to live. You can lift the marker to change it to a different country and the statistics will update to the current date selected. When permission is initially given, the country is determined through the longitude and latitude using react-native-geocoding and the country is passed to getJson(country) which then returns the response from the API call in getJson. 
