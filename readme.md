@@ -20,8 +20,11 @@ Works only on Apple iPhone
 - expo init AwesomeProject
 - cd AwesomeProject
 - replace the app.js in this folder with the app.js in the repo
-- copy in startup.bat or startup.sh
-- run startup.bat or startup.sh in the AwesomeProject folder
+- npm install react
+- npm install react-native
+- npm install react-native-map
+- npm install react-native-geocoding
+- npm install react-native-picker-select
 - npm start
 - Download Expo app on iOS, Scan QR Code on the app
 - May use app to change date, change location of the marker and the statistics will update, press the button for live overall statistics
