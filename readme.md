@@ -20,6 +20,7 @@ Works only on Apple iPhone
 - expo init AwesomeProject
 - cd AwesomeProject
 - replace the app.js in this folder with the app.js in the repo
+- update key in app.js with a google api key that may be used for geocoding
 - npm install react
 - npm install react-native
 - npm install react-native-map
