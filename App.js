@@ -5,7 +5,7 @@ import Geocoder from 'react-native-geocoding';
 import * as Permissions from 'expo-permissions';
 import RNPickerSelect from 'react-native-picker-select';
 
-Geocoder.init('AIzaSyAP3f4Eiq0zL1177qW1QkXnD-h_ahkfAj0')
+Geocoder.init('XXXUPDATEWITHKEYHEREXXX')
 
 getJson = (country) => {
     country = country.replace(" ", "-")
